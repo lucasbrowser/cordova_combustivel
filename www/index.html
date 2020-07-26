@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Teste</title>
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="topo-fixo z-depth-1">
+        <div class="yellow darken-4 white-text valign-wrapper">
+            <h5 class="titulo">Combustivel</h5>
+        </div>
+            <ul class="tabs yellow darken-4">
+                <li class="tab"><a href="#calccombustivel" class="white-text">Abastecer</a></li>
+            </ul>
+    </div>
+        <div class="section" id="calccombustivel">
+            <h6 class="container red-text">Abastecer com Álcool ou Gasolina</h6><br><br>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Álcool</th>
+                        <th>Gasolina</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input id="alcool" name="alcool" type="text"></td>
+                        <td><input id="gasolina" name="gasolina" type="text"></td>
+                    </tr>
+                    <tr colspan='2'>
+                        <td><button id="calcular" class="waves-effect waves-light btn-large">Calcular</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="resultado"></div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/index.js"></script>
+</body>
+</html>
